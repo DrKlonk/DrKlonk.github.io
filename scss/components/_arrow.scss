@@ -1,0 +1,13 @@
+.arrow {
+  margin-top: 2rem;
+  height: 5rem;
+  width: 2rem;
+  fill: orangered;
+
+  @include respond(phone) {
+    display: none;
+  }
+
+  animation: upAndDown 3s infinite;
+  animation-delay: 1s;
+}

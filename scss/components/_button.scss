@@ -1,2 +1,26 @@
 .btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  @include shadow-small;
+  @include transition-short;
+
+  &:hover {
+    transform: translateY(-0.125rem);
+    background-color: $color-secondary-dark;
+  }
+  &:active,
+  &:focus {
+    transform: translateY(0);
+    background-color: $color-secondary-dark;
+    outline: thin dotted;
+  }
+
+  &--primary {
+    background-color: $color-secondary;
+  }
 }
