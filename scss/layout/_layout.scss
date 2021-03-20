@@ -1,4 +1,5 @@
 body {
+  background-color: $color-blue-light;
 }
 
 .main {
@@ -20,7 +21,25 @@ body {
   flex-grow: 1;
 }
 
-.footer {
-  min-height: 10rem;
-  background-color: $color-dark-grey;
+.section-work {
+  padding: 10rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.separator {
+  height: 20rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 60%);
 }

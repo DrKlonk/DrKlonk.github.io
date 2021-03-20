@@ -23,4 +23,13 @@
   &--primary {
     background-color: $color-secondary;
   }
+
+  &--secondary {
+    background-color: #fff;
+    color: $color-grey-dark;
+
+    &:hover {
+      background-color: $color-grey-light;
+    }
+  }
 }

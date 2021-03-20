@@ -1,0 +1,129 @@
+.card {
+  perspective: 150rem;
+  height: 36rem;
+  max-width: 28rem;
+  flex: 1 0 100%;
+  margin: 1rem;
+
+  &__side {
+    transition: transform 0.8s ease;
+    height: 36rem;
+    border-radius: 0.5rem;
+    @include shadow-small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &--back {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary,
+        $color-secondary-dark
+      );
+      transform: rotateY(180deg);
+    }
+  }
+
+  &.showBack &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &.showBack &__side--back {
+    transform: rotateY(0);
+  }
+
+  ////////////////
+  // FRONT SIDE
+
+  &__header {
+    height: 30%;
+    padding: 7rem 2rem 0 2rem;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      opacity: 0.2;
+      z-index: -1;
+      transform: rotate(20deg);
+    }
+
+    &--keylane::before {
+      background-image: url("../img/keylane.jpg");
+    }
+    &--ync::before {
+      background-image: url("../img/ync.png");
+    }
+    &--fem::before {
+      background-image: url("../img/fem.png");
+      background-repeat: no-repeat;
+    }
+    &--otm::before {
+      background-image: url("../img/otm.png");
+    }
+    &--atalanta::before {
+      background-image: url("../img/atalanta.png");
+    }
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+  }
+
+  &__sub-heading {
+  }
+
+  &__content {
+    padding: 2rem;
+    background-color: #fff;
+    height: 70%;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__techniques-used {
+    font-style: italic;
+  }
+
+  //////////////////
+  // BACK SIDE
+
+  &__read-more {
+    padding: 3rem;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__list {
+    margin-top: 1rem;
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+    &::before {
+      content: "✔️";
+      position: absolute;
+      left: -1.6rem;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__company-link:hover {
+    color: #fff;
+  }
+}

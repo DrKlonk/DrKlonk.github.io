@@ -1,0 +1,80 @@
+.footer {
+  min-height: 10rem;
+  background-color: $color-grey-dark;
+  padding: 3rem;
+  color: $color-grey-light;
+  @include flex-center;
+
+  &__contact-side {
+    width: 50%;
+    padding-right: 3rem;
+    border-right: 0.25rem solid $color-secondary-dark;
+  }
+  &__references-side {
+    width: 50%;
+    padding-left: 3rem;
+  }
+
+  &__actions {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__action {
+    font-family: inherit;
+    font-size: inherit;
+    @include flex-center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+      box-shadow: 0 0 0rem 0.25rem $color-secondary-dark;
+    }
+
+    &:hover {
+      background-color: $color-grey-dark;
+      box-shadow: 0 0 0rem 0.25rem $color-grey-light;
+      color: $color-secondary-dark;
+    }
+
+    &:active {
+      background-color: $color-grey-dark;
+      box-shadow: 0 0 0rem 0.25rem $color-grey-light;
+      color: $color-secondary;
+    }
+  }
+
+  &__logo {
+    margin-left: 1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.copy-btn {
+  position: relative;
+
+  &::after {
+    content: "E-mailadres gekopieerd!";
+    position: absolute;
+    background-color: $color-secondary-dark;
+    color: #000;
+    left: 100%;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+}
+
+.copy-btn.copied {
+  &::after {
+    opacity: 1;
+  }
+}

@@ -21,7 +21,7 @@
   &__text-side {
     width: 61.6%;
     padding-right: 3rem;
-    border-right: 1px solid $color-dark-grey;
+    border-right: 1px solid $color-grey-dark;
 
     @include respond(tab-port) {
       width: 100%;
