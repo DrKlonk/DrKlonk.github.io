@@ -7,7 +7,6 @@
   @include flex-center;
 
   @include respond(tab-port) {
-    background-color: yellowgreen;
     flex-direction: column;
   }
 
@@ -18,13 +17,19 @@
 
     @include respond(tab-port) {
       border-right: none;
+      padding: 0 0 3rem;
       border-bottom: 0.25rem solid $color-secondary-dark;
+      width: 100%;
     }
   }
 
   &__references-side {
     width: 50%;
     padding-left: 3rem;
+    @include respond(tab-port) {
+      padding: 3rem 0 0;
+      width: 100%;
+    }
   }
 
   &__actions {

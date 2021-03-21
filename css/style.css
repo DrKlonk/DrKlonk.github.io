@@ -3,7 +3,7 @@
   margin-bottom: 2rem; }
 
 .u-margin-left-tiny {
-  margin-left: 1rem; }
+  margin-left: 0.5rem; }
 
 .u-text-align-center {
   text-align: center; }
@@ -266,7 +266,6 @@ a:link, a:visited {
   align-items: center; }
   @media only screen and (max-width: 48em) {
     .footer {
-      background-color: yellowgreen;
       flex-direction: column; } }
   .footer__contact-side {
     width: 50%;
@@ -275,10 +274,16 @@ a:link, a:visited {
     @media only screen and (max-width: 48em) {
       .footer__contact-side {
         border-right: none;
-        border-bottom: 0.25rem solid #f2a900; } }
+        padding: 0 0 3rem;
+        border-bottom: 0.25rem solid #f2a900;
+        width: 100%; } }
   .footer__references-side {
     width: 50%;
     padding-left: 3rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__references-side {
+        padding: 3rem 0 0;
+        width: 100%; } }
   .footer__actions {
     list-style: none;
     display: flex;
