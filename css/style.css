@@ -230,7 +230,9 @@ a:link, a:visited {
     justify-content: space-between; }
     @media only screen and (max-width: 48em) {
       .intro-card__button-block {
-        flex-direction: column; } }
+        flex-direction: column; }
+        .intro-card__button-block > * {
+          margin: 0.5rem 0; } }
   .intro-card__photo-side {
     width: 38.4%;
     padding-left: 3rem;
