@@ -61,7 +61,6 @@ a:link, a:visited {
   font-family: inherit;
   font-size: 0.95rem;
   cursor: pointer;
-  margin: 0.5rem 0;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   transition: all 0.2s; }
   .btn:hover {
@@ -147,13 +146,16 @@ a:link, a:visited {
   .card__content {
     padding: 2rem;
     background-color: #fff;
-    height: 70%; }
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     .card__content p {
       margin-bottom: 2rem; }
   .card__techniques-used {
     font-style: italic; }
   .card__read-more {
-    padding: 3rem;
+    padding: 3rem 3rem 2rem;
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -262,10 +264,18 @@ a:link, a:visited {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 48em) {
+    .footer {
+      background-color: yellowgreen;
+      flex-direction: column; } }
   .footer__contact-side {
     width: 50%;
     padding-right: 3rem;
     border-right: 0.25rem solid #f2a900; }
+    @media only screen and (max-width: 48em) {
+      .footer__contact-side {
+        border-right: none;
+        border-bottom: 0.25rem solid #f2a900; } }
   .footer__references-side {
     width: 50%;
     padding-left: 3rem; }

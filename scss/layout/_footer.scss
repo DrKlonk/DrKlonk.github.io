@@ -3,13 +3,25 @@
   background-color: $color-grey-dark;
   padding: 3rem;
   color: $color-grey-light;
+
   @include flex-center;
+
+  @include respond(tab-port) {
+    background-color: yellowgreen;
+    flex-direction: column;
+  }
 
   &__contact-side {
     width: 50%;
     padding-right: 3rem;
     border-right: 0.25rem solid $color-secondary-dark;
+
+    @include respond(tab-port) {
+      border-right: none;
+      border-bottom: 0.25rem solid $color-secondary-dark;
+    }
   }
+
   &__references-side {
     width: 50%;
     padding-left: 3rem;
