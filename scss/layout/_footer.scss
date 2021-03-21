@@ -36,6 +36,12 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+
+    li {
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
   }
 
   &__action {
@@ -48,6 +54,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    @include respond(phone) {
+      margin: 0.5rem 0;
+      width: 100%;
+    }
 
     &:focus {
       box-shadow: 0 0 0rem 0.25rem $color-secondary-dark;
