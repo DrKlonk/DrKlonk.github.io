@@ -2,6 +2,12 @@
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
+.u-margin-left-tiny {
+  margin-left: 1rem; }
+
+.u-text-align-center {
+  text-align: center; }
+
 @keyframes upAndDown {
   0% {
     transform: translateY(0); }
@@ -19,9 +25,6 @@
 
 html {
   box-sizing: border-box; }
-  @media only screen and (max-width: 64em) {
-    html {
-      font-size: 80%; } }
 
 body {
   font-family: "Montserrat", "Arial"; }
@@ -82,6 +85,12 @@ a:link, a:visited {
   max-width: 28rem;
   flex: 1 0 100%;
   margin: 1rem; }
+  @media only screen and (max-width: 30em) {
+    .card {
+      height: 44rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .card {
+      height: 48rem; } }
   .card__side {
     transition: transform 0.8s ease;
     height: 36rem;
@@ -93,6 +102,12 @@ a:link, a:visited {
     width: 100%;
     overflow: hidden;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 30em) {
+      .card__side {
+        height: 44rem; } }
+    @media only screen and (max-width: 22.5em) {
+      .card__side {
+        height: 48rem; } }
     .card__side--back {
       background-image: linear-gradient(to right bottom, #ffd700, #f2a900);
       transform: rotateY(180deg); }
@@ -166,11 +181,11 @@ a:link, a:visited {
   box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 64em) {
     .intro-card {
       flex-direction: column;
       max-width: 40rem; } }
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 48em) {
     .intro-card {
       max-width: 90%;
       padding: 2rem; } }
@@ -178,7 +193,7 @@ a:link, a:visited {
     width: 61.6%;
     padding-right: 3rem;
     border-right: 1px solid #625d5d; }
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 64em) {
       .intro-card__text-side {
         width: 100%;
         padding-right: 0;
@@ -186,14 +201,14 @@ a:link, a:visited {
   .intro-card__heading {
     font-size: 3rem;
     margin-bottom: 1rem; }
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 64em) {
       .intro-card__heading {
         display: flex;
         justify-content: space-between;
         align-items: center; } }
   .intro-card__heading-photo {
     display: none; }
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 64em) {
       .intro-card__heading-photo {
         margin-left: 1rem;
         display: inline-block;
@@ -211,7 +226,7 @@ a:link, a:visited {
     margin-top: 0.25rem;
     display: flex;
     justify-content: space-between; }
-    @media only screen and (max-width: 30em) {
+    @media only screen and (max-width: 48em) {
       .intro-card__button-block {
         flex-direction: column; } }
   .intro-card__photo-side {
@@ -220,7 +235,7 @@ a:link, a:visited {
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 64em) {
       .intro-card__photo-side {
         display: none; } }
   .intro-card__photo-box {
@@ -311,6 +326,7 @@ body {
 
 .section-intro {
   min-height: 95vh;
+  padding-bottom: 10rem;
   background-image: linear-gradient(to right bottom, #00b012, #7cc800);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   display: flex;
@@ -327,7 +343,7 @@ body {
 .cards {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 .separator {

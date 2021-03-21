@@ -8,12 +8,12 @@
   display: flex;
   justify-content: space-between;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     flex-direction: column;
     max-width: 40rem;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     max-width: 90%;
     padding: 2rem;
   }
@@ -23,49 +23,55 @@
     padding-right: 3rem;
     border-right: 1px solid $color-grey-dark;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       width: 100%;
       padding-right: 0;
       border-right: none;
     }
   }
+
   &__heading {
     font-size: 3rem;
     margin-bottom: 1rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
   }
+
   &__heading-photo {
     display: none;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       margin-left: 1rem;
       display: inline-block;
       border-radius: 50%;
       height: 6rem;
     }
   }
+
   &__sub-heading {
     font-size: 1.25rem;
     margin-bottom: 3rem;
   }
+
   &__content {
     margin: 1rem 0;
   }
+
   &__side-note {
     margin-top: 3rem;
     font-size: 0.825rem;
   }
+
   &__button-block {
     margin-top: 0.25rem;
     display: flex;
     justify-content: space-between;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column;
     }
   }
@@ -75,24 +81,28 @@
     padding-left: 3rem;
     @include flex-center;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       display: none;
     }
   }
+
   &__photo-box {
     @include flex-center;
     flex-direction: column;
   }
+
   &__photo {
     height: 14rem;
     border-radius: 50%;
     @include shadow-small;
   }
+
   &__caption {
     font-size: 0.875rem;
     margin-top: 3rem;
     text-align: center;
   }
+
   &__sub-caption {
     display: block;
   }

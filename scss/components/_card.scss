@@ -5,6 +5,13 @@
   flex: 1 0 100%;
   margin: 1rem;
 
+  @include respond(phone) {
+    height: 44rem;
+  }
+  @include respond(tiny) {
+    height: 48rem;
+  }
+
   &__side {
     transition: transform 0.8s ease;
     height: 36rem;
@@ -16,6 +23,14 @@
     width: 100%;
     overflow: hidden;
     backface-visibility: hidden;
+
+    @include respond(phone) {
+      height: 44rem;
+    }
+
+    @include respond(tiny) {
+      height: 48rem;
+    }
 
     &--back {
       background-image: linear-gradient(
