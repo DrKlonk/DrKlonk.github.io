@@ -8,8 +8,4 @@
 
 html {
   box-sizing: border-box;
-
-  @include respond(tab-land) {
-    // font-size: 80%;
-  }
 }
