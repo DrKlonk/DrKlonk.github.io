@@ -49,6 +49,7 @@
       display: inline-block;
       border-radius: 50%;
       height: 6rem;
+      @include shadow-small;
     }
   }
 
