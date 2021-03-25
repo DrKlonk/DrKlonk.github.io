@@ -60,6 +60,7 @@ a:link, a:visited {
   border-radius: 0.25rem;
   font-family: inherit;
   font-size: 0.95rem;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   transition: all 0.2s; }
@@ -305,7 +306,8 @@ a:link, a:visited {
     border-radius: 0.5rem;
     border: none;
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #fff; }
     @media only screen and (max-width: 30em) {
       .footer__action {
         margin: 0.5rem 0;
@@ -319,6 +321,47 @@ a:link, a:visited {
     .footer__action:active {
       background-color: #625d5d;
       box-shadow: 0 0 0rem 0.25rem #eee;
+      color: #ffd700; }
+  .footer__links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 30em) {
+      .footer__links li {
+        width: 100%; } }
+  .footer__link {
+    font-family: inherit;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    text-decoration: none; }
+    @media only screen and (max-width: 30em) {
+      .footer__link {
+        margin: 0.5rem 0;
+        width: 100%; } }
+    .footer__link:focus {
+      box-shadow: 0 0 0rem 0.25rem #f2a900; }
+    .footer__link:hover {
+      background-color: #625d5d;
+      box-shadow: 0 0 0rem 0.25rem #eee;
+      color: #f2a900; }
+    .footer__link:active {
+      background-color: #625d5d;
+      box-shadow: 0 0 0rem 0.25rem #eee;
+      color: #ffd700; }
+    .footer__link:link, .footer__link:visited {
+      color: #000; }
+    .footer__link:hover {
+      color: #f2a900; }
+    .footer__link:active {
       color: #ffd700; }
   .footer__logo {
     margin-left: 1rem;
@@ -337,10 +380,12 @@ a:link, a:visited {
     padding: 0.5rem;
     border-radius: 0.5rem;
     opacity: 0;
+    visibility: hidden;
     transition: opacity 0.3s ease-in; }
 
 .copy-btn.copied::after {
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible; }
 
 body {
   background-color: #f0f5fc; }

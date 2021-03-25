@@ -30,8 +30,8 @@
               *Ik ben het meest responsive via deze kanalen
             </p>
             <div class="intro-card__button-block">
-              <button onclick="window.open('mailto:joranminjon@gmail.com', '_blank')"class="btn btn--primary">Stuur me een mailtje</button>
-              <button onclick="window.open('https://www.linkedin.com/in/joran-minjon-a9915462/', '_blank')" class="btn btn--primary">Bericht me op LinkedIn</button>
+              <a href='mailto:joranminjon@gmail.com' target='_blank' class="btn btn--primary">Stuur me een mailtje</a>
+              <a href="https://www.linkedin.com/in/joran-minjon-a9915462/" target='_blank' class="btn btn--primary">Bericht me op LinkedIn</a>
             </div>
           </div>
           <div class="intro-card__photo-side">
@@ -299,12 +299,15 @@ Progressive Web App (PWA) proof door middel van een serviceworker die je netjes 
     </main>
     <footer class="footer">
       <div class="footer__contact-side">
-        <h3 class="u-margin-left-tiny">Direct contact</h3>
+        <h3 class="u-margin-left-tiny">Acties</h3>
         <ul class="footer__actions">
           <li><button data-clipboard-text="joranminjon@gmail.com" class="footer__action copy-btn">Kopieer mijn e-mailadres <ion-icon class="footer__logo" name="copy-outline"></ion-icon></button></li>
-          <li><button onclick="window.open('https://github.com/DrKlonk', '_blank')" class="footer__action">Mijn GitHub <ion-icon class="footer__logo" name="logo-github"></ion-icon></button></li>
-          <li><button onclick="window.open('https://www.linkedin.com/in/joran-minjon-a9915462/', '_blank')" class="footer__action">Mijn LinkedIn <ion-icon class="footer__logo" name="logo-linkedin"></ion-icon></button></li>
           <li><button onclick="window.open('cv.pdf')" class="footer__action">Download mijn CV <ion-icon class="footer__logo" name="document-attach-outline"></ion-icon></button></li>
+        </ul>
+          <h3 class="u-margin-left-tiny">Links</h3>
+        <ul class="footer__links">
+          <li><a href='https://github.com/DrKlonk' target='_blank' class="footer__link">Mijn GitHub <ion-icon class="footer__logo" name="logo-github"></ion-icon></a></li>
+          <li><a href='https://www.linkedin.com/in/joran-minjon-a9915462/' target='_blank' class="footer__link">Mijn LinkedIn <ion-icon class="footer__logo" name="logo-linkedin"></ion-icon></a></li>
         </ul>
       </div>
       <div class="footer__references-side">
