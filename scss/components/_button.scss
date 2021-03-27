@@ -5,7 +5,9 @@
   font-family: inherit;
   font-size: 0.95rem;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
+
   @include shadow-small;
   @include transition-short;
 

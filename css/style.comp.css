@@ -24,7 +24,8 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 body {
   font-family: "Montserrat", "Arial"; }
@@ -61,6 +62,7 @@ a:link, a:visited {
   font-family: inherit;
   font-size: 0.95rem;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   transition: all 0.2s; }
@@ -176,9 +178,9 @@ a:link, a:visited {
     color: #fff; }
 
 .intro-card {
-  background-color: #f0f5fc;
+  background-color: #fff;
   border-radius: 1rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   max-width: 60rem;
   padding: 3rem;
   box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
