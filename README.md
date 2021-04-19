@@ -43,6 +43,10 @@ This is my portfolio! It basically is my resume, but then online. I'm not a desi
 
 - [Advanced CSS and SASS course](https://www.udemy.com/course/advanced-css-and-sass/) - This inspired the flipping cards and overall design in general
 
+### Acknowledgements
+
+I have to give credit to one of my friends, Mark, who advised me and inspired some of the styling. [Visit his website](https://helloimmark.com/)
+
 ## Author
 
 - Website - [Joran Minjon](https://joranminjon.com)
