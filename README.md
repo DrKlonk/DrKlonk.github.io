@@ -11,6 +11,7 @@ This is my portfolio! It basically is my resume, but then online. I'm not a desi
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+  - [Acknowledgements](#acknowledgements)
 - [Author](#author)
 
 ## Overview
